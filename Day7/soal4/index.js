@@ -2,10 +2,9 @@ let angka = 56;
 let angkaPalindromeSelanjutnya = cekPalindrome(angka);
 
 function isPalindrome(a) {
-    var angkaString = a.toString();
-    var panjang = angkaString.length;
-  
-    for (var i = 0; i < Math.floor(panjang / 2); i++) {
+    let angkaString = a.toString();
+    let panjang = angkaString.length;
+    for (let i = 0; i < Math.floor(panjang / 2); i++) {
       if (angkaString[i] !== angkaString[panjang - 1 - i]) {
         return false;
       }
@@ -15,7 +14,6 @@ function isPalindrome(a) {
 
 function cekPalindrome(a) {
     a++;
-  
     while (!isPalindrome(a)) {
       a++;
     }
